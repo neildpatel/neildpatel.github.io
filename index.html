@@ -19,9 +19,23 @@
             display: inline; /* Display the anchor element inline */
             margin-right: 0px; /* Add some spacing between the links */
         }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ced9ff;
+        }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="presentations.html">Presentations</a>
+    </nav>
     <div class="grid-2">
         <div class="section-1">
             <img src="pics/Headshot.jpg" alt="Neil Patel's headshot">
@@ -35,40 +49,11 @@
             <h2>About Me</h2>
             <p>I’m a water security, sanitation, and hygiene specialist at <a href="https://www.dai.com/our-work/solutions/environment-solutions/water-and-sanitation-services-and-resource-management">DAI</a> supporting a portfolio of USAID-funded WSSH programs around the world, primarily the <a href="https://www.globalwaters.org/HowWeWork/Activities/philippines-safe-water">USAID/Philippines Safe Water</a> and <a href="https://www.dai.com/our-work/projects/haiti-usaid-water-and-sanitation-watsan">USAID/Haiti Eau</a> activities. I additionally provide short-term technical assistance as a WSSH specialist to a variety of water, biodiversity, and climate adaptation programs, including: <a href="https://www.dai.com/our-work/projects/africa-trade-and-investment-ati-activity"> USAID Africa Trade & Investment</a>, <a href="https://www.globalwaters.org/HowWeWork/Activities/usaid-fragile-waters-activity">USAID Fragile Waters</a>, and <a href="https://www.gcbc.org.uk/">UK Global Centre on Biodiversity on Climate.</a> </p>
             <p>Prior to this role, I was the Project Analyst for <a href="https://www.globalwaters.org/wash-fin-2">USAID’s Water, Sanitation, and Hygiene Finance (WASH-FIN) 2</a>, where I led data analytics, monitoring, and impact evaluation efforts for a $73M program operating in ten countries (with primary operations in India, Kenya, Ghana, and Rwanda) to mobilize financing for climate resilient water and sanitation services. I also previously worked on <a href="https://www.globalwaters.org/wash-fin">USAID’s Water, Sanitation, and Hygiene Finance (WASH-FIN)</a> and <a href="https://www.globalwaters.org/HowWeWork/Activities/uganda-sanitation-health-activity">Uganda Sanitation for Health Activity (USHA)</a> activities.</p> 
-            <p>I’m passionate about youth representation in the water sector and represent North America on the global steering committee for <a href="https://www.unesco.org/en/articles/unesco-groundwater-youth-network">UNESCO’s Groundwater Youth Network</a>, supporting research, career development, and capacity-building programs for a body of 1,400+ young water professionals representing 114 countries. I have advocated for youth inclusion in the Sustainable Development Goals at the United Nations’ General Assembly and the High-Level Political Forum for Sustainable Development.</p>
-            <p>I have a master’s degree in Data, Economics, and Development Policy from MIT, and an undergraduate degree in Business Honors & Plan II from the University of Texas at Austin.     
-                <h2>Projects</h2>
-            <p>My research primarily focuses on the use of geospatial AI to improve water security and access in urban areas. I was a research affiliate with the MIT <a href="https://senseable.mit.edu/">Senseable City Lab</a> and <a href="https://d-lab.mit.edu/">MIT D-Lab</a>, working on projects ranging from designing a sensor system to monitor vermifilter wastewater treatment systems in rural Colombia to developing deep learning models trained to detect and geo-reference water points using street-level imagery in Lagos. You can learn more about my projects on this page.
-                <ul>
-                    <li> A Deep Learning Approach to Water Point Detection and Mapping Using Street-Level Imagery in Lagos, Nigeria [MIT Senseable City Lab] <a href="files/Patel_UNC_Poster.pdf" class="button">Poster</a> <a href="files/UNC Tech Showcase.pdf" class="button">Slides</a> <a href="https://github.com/neildpatel/waterpointdetections" class="button">GitHub Repo</a> <a href="https://universe.roboflow.com/neil-patel/lagos-water-point-detections/dataset/3" class="button">Roboflow</a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Abstract:</i> Households in developing countries often rely on alternative shared water sources that exist outside of the datasets of public service providers. This poses a significant challenge to accurately measuring the number of households outside the public service system that use a safe and accessible water source. This paper proposes a novel deep learning approach that utilizes a convolutional neural network to detect water points in street-level imagery from Google Street View. Using a case study of the Agege local government area in Lagos, Nigeria, the model detected 36 previously unregistered water points across a variety of urban settings and obstruction levels with 94.7% precision. The paper was developed through the support of Prof. Carlo Ratti and the MIT Senseable City Lab. </p>
-                    <li> Strengthening Systems-Based Leak Prevention in CDMX Using Blockchain [UT Austin] <a href="https://watersciencepolicy.com/article/strengthening-systemsbased-leak-prevention-in-ciudad-de-mxico-through-blockchain--1091c7aab398?language=English" class="button">Blog</a> <a href="files/IFAT Eurasia – Blockchain CDMX.pdf" class="button">Slides</a> <a href="https://youthforwater.org/app/uploads/2021/05/WYPW_Innovation-for-Water_GA-2021.pdf" class="button">Brief</a> <a href="https://youtu.be/tNmJsG2Y5Do?si=6D2NuRCsWgjlCKdT&t=2121" class="button">Presentation</a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Abstract:</i> Ciudad de México (CDMX) loses an estimated 40 percent of water to thousands of leaks emerging throughout its over 12,000 kilometres of piped infrastructure, half of which was built six decades ago. Navigating the interrelated challenges of leak detection, maintenance, and prevention requires a systems-based approach that harmonizes the efforts of the numerous stakeholders involved in managing the metropolitan area’s water infrastructure. This research explores three potential applications of the enhanced data integrity offered through blockchain to improving systems-based leak prevention in CDMX: (1) streamlining maintenance through smart contracts, (2) reducing diligence burdens for external financing, and (3) strengthening accountability mechanisms for equitable service provision. </p>
-                    <li> Data Collection and Monitoring for Vermifilter Toilets in Agua Bonita, Colombia [MIT D-Lab] <a href="https://d-lab.mit.edu/academics/student-projects-presentations/data-collection-and-monitoring-vermifilter-toilets" class="button"> D-Lab Project Page </a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Abstract:</i> Ecoconcientizate is currently piloting a cutting-edge biological sewage treatment system specifically designed for use in rural Colombia. The vermifiltration system utilizes California red worms to compost fecal matter, and then drains liquids into a secondary layer of sand and gravel filters before transporting it to an artificial wetland for further treatment through a phytoremediation process. Our team conducted water quality testing on three vermifilter systems in Agua Bonita, Colombia. We also led bilingual community workshops in Spanish and English on at-home water quality monitoring for community members interested in installing their own vermifilter system. </p>
-                    <li> Impact Evaluation of Meter Replacements on Water Service Provider Revenue Collection in Kenya [USAID WASH-FIN 2] <a href="https://github.com/neildpatel/kenyameteringimpacteval" class="button">Code</a> <a href="files/WF2_DEDP_Capstone_Patel.pdf" class="button">Slides</a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Abstract:</i> Capstone Thesis for MASc in Data, Economics, and Development Policy at MIT. The COVID-19 pandemic had a substantial impact on financial sustainability of water utilities in Kenya. USAID's Water, Sanitation, and Hygiene Finance (WASH-FIN) supported four Kenyan county water utilities in replacing 5,100 meters to improve the accuracy of billing systems. Using a differences-in-differences quasi-experimental design, I produce an estimate of the financial impact of the metering intervention on revenue collection while differencing out temporal variation and baseline imbalances in water consumption. The final report and verbal presentation were evaluated by faculty director and Nobel laureate Esther Duflo. </p>
-                    <li> Women and Water Conservation: Intra-Household Learning in Jordan’s Agriculture Sector [MIT Economics] <a href="files/jordan.pdf" class="button"> Research Proposal </a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Abstract:</i> This project presents an experimental design for a behavioral economics RCT that estimates the effect of gender on information spillovers for water conservation knowledge in agricultural communities in Jordan. The proposal was developed as part of a PhD-level workshop under the supervision of Nobel laureate Prof. Abhijit Banerjee and Prof. Frank Schilbach. </p>
-                </ul>
-            <h2>Recent Presentations</h2>
-            <ul>
-                <li>April 2024. Innovations in Climate Resilience (ICR24). "Financing Water Security through Payments for Ecosystem Services".  Washington, DC.</li>
-
-                <li>October 2023. UNC Water & Health Conference, "A Deep Learning Approach to Water Point Detection and Mapping Using Street-Level Imagery" [Technology Showcase]. Chapel Hill, NC. <a href="files/UNC Tech Showcase.pdf" class="button">Slides</a> </li>
-
-                <li>July 2023. United Nations High Level Political Forum on Sustainable Development, SDG 6 Special Event, Panelist for Session on Youth Engagement. New York, NY. <a href="https://media.un.org/en/asset/k1c/k1cx6qhd4j?kalturaStartTime=1228" class="button">Video</a></li>
-
-                <li>July 2023. United Nations High Level Political Forum on Sustainable Development, SDG 6 Special Event. Intervention from the Floor for Session on Financing. New York, NY. <a href="https://media.un.org/en/asset/k1c/k1cx6qhd4j?kalturaStartTime=25621" class="button">Video</a></li>
-
-                <li>March 2023. United Nations 2023 Water Conference, Turning the Tide: A Call to Collective Action, Global Commission on the Economics of Water, Intervention from the Floor. New York, NY. <a href="https://youtu.be/Vssr-d4mcH4?t=327" class="button">Video</a></li>
-
-                <li>October 2022. UN World Water Development Report 2022: Making the Invisible Visible, Highlighting Youth Work on Groundwater Management [Webinar]. "Youth Networkings: Creating Opportunities for Young Groundwater Professionals" <a href="files/UNESCO_GWYN.pdf" class="button">Slides</a></li>
-
-                <li> November 2021. Water Science Policy Virtual Gala: Catalysing Water Solutions to Climate Change [Webinar]. "Streamlining Systems-Based Leak Prevention in CDMX through Blockchain." <a href="https://youtu.be/tNmJsG2Y5Do?t=2120" class="button">Video</a></li>
-
-                <li>October 2021. IFAT Eurasia: Climate Change and Environment Conference [Virtual]. "Strengthening Systems-Based Leak Prevention in Ciudad de México through Blockchain." <a href="files/IFAT Eurasia – Blockchain CDMX.pdf" class="button"> Slides</a></li>
-            </ul> 
+            <p>I have a master’s degree in Data, Economics, and Development Policy from MIT, and an undergraduate degree in Business Honors & Plan II from the University of Texas at Austin. </p>
+            <h2>Research</h2>
+            <p>My research primarily focuses on the use of geospatial AI to improve water security and access in urban areas. I was a research affiliate with the MIT <a href="https://senseable.mit.edu/">Senseable City Lab</a> and <a href="https://d-lab.mit.edu/">MIT D-Lab</a>, working on projects ranging from designing a sensor system to monitor vermifilter wastewater treatment systems in rural Colombia to developing deep learning models trained to detect and geo-reference water points using street-level imagery in Lagos. You can learn more about my projects on this <a href="neildpatel.github.io/projects">page</a>.
+            <h2>Groundwater Youth Network</h2>
+            <p>I’m passionate about youth representation in the water sector and represent North America on the global steering committee for <a href="https://www.unesco.org/en/articles/unesco-groundwater-youth-network">UNESCO’s Groundwater Youth Network</a>, supporting research, career development, and capacity-building programs for a body of 1,400+ young water professionals representing 114 countries. I have advocated for youth inclusion in the Sustainable Development Goals at the United Nations’ General Assembly and the High-Level Political Forum for Sustainable Development.</p>     
         </div>  
         </div>
     </div>
