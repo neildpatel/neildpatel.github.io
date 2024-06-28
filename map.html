@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+    <html lang="en">
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+            <title>Neil Patel</title>
+            <style>
+                .section-x img {
+                    max-width: 40%;
+                    height: auto;
+                    border-radius: 50%;
+                    display: block;
+                    margin: 0 auto;
+                    background-color: #010e1c
+                }
+                .section-x a {
+                    display: inline; /* Display the anchor element inline */
+                    margin-right: 0px; /* Add some spacing between the links */
+                }
+                nav {
+                    text-align: center;
+                    margin: 20px 0;;
+                }
+                nav a {
+                    margin: 0 15px;
+                    text-decoration: none;
+                    color: #010e1c;
+                }
+            </style>
+        <body>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="presentations.html">Presentations</a>
+                <a href="map.html">Work History</a>
+            </nav>
+        </body>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_aa3a0ca3f979ab09772996e1fb375668 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_aa3a0ca3f979ab09772996e1fb375668" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_aa3a0ca3f979ab09772996e1fb375668 = L.map(
+                "map_aa3a0ca3f979ab09772996e1fb375668",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7086c0bfdde162869a02c9b738cb1360 = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+            var marker_e5e2706538e141149677390311798a6b = L.marker(
+                [12.5657, 104.991],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_a210a525a794bb3db218122a93aa2725 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_3ca50fa61ff31ea448e2e9a249216d56 = $(`<div id="html_3ca50fa61ff31ea448e2e9a249216d56" style="width: 100.0%; height: 100.0%;"><h3>Cambodia</h3><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p></div>`)[0];
+                popup_a210a525a794bb3db218122a93aa2725.setContent(html_3ca50fa61ff31ea448e2e9a249216d56);
+            
+        
+
+        marker_e5e2706538e141149677390311798a6b.bindPopup(popup_a210a525a794bb3db218122a93aa2725)
+        ;
+
+        
+    
+    
+            marker_e5e2706538e141149677390311798a6b.bindTooltip(
+                `<div>
+                     Cambodia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3fec77ae39e95f67f1cf460c0c673fc7 = L.marker(
+                [-4.0383, 21.7587],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_fe3a6604f54d05e35172a8e2950ad7bc = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f52b1110fd22782eb336414ee3c5638f = $(`<div id="html_f52b1110fd22782eb336414ee3c5638f" style="width: 100.0%; height: 100.0%;"><h3>El Salvador</h3><p>2018-2019: Department of State, Office of Threat Finance Countermeasures - Intern</p></div>`)[0];
+                popup_fe3a6604f54d05e35172a8e2950ad7bc.setContent(html_f52b1110fd22782eb336414ee3c5638f);
+            
+        
+
+        marker_3fec77ae39e95f67f1cf460c0c673fc7.bindPopup(popup_fe3a6604f54d05e35172a8e2950ad7bc)
+        ;
+
+        
+    
+    
+            marker_3fec77ae39e95f67f1cf460c0c673fc7.bindTooltip(
+                `<div>
+                     Democratic Republic of Congo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_46a40ffc59f5321e7f86ff8fb1ada159 = L.marker(
+                [13.7942, -88.8965],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_cb93369a71d804495f7164598fd22372 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_a9435141c9c288392cccca07edab5b2a = $(`<div id="html_a9435141c9c288392cccca07edab5b2a" style="width: 100.0%; height: 100.0%;"><h3>El Salvador</h3><p>2024-Present: USAID/El Salvador Governance and Accountability for Water Services (GAWS) - DAI HO Technical Backstop</p></div>`)[0];
+                popup_cb93369a71d804495f7164598fd22372.setContent(html_a9435141c9c288392cccca07edab5b2a);
+            
+        
+
+        marker_46a40ffc59f5321e7f86ff8fb1ada159.bindPopup(popup_cb93369a71d804495f7164598fd22372)
+        ;
+
+        
+    
+    
+            marker_46a40ffc59f5321e7f86ff8fb1ada159.bindTooltip(
+                `<div>
+                     El Salvador
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_48dda54e789b7707014cb9287acea192 = L.marker(
+                [7.9465, -1.0232],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_c12158c4a160aacc30aa8bc66a2abdc2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_a7fea9560ec83a05a6be0056e85c59eb = $(`<div id="html_a7fea9560ec83a05a6be0056e85c59eb" style="width: 100.0%; height: 100.0%;"><h3>Ghana</h3><p>2022-2023: USAID Water, Sanitation, and Hygiene Finance 2.0 (WASH-FIN 2) - Project Analyst and MEL Lead</p></div>`)[0];
+                popup_c12158c4a160aacc30aa8bc66a2abdc2.setContent(html_a7fea9560ec83a05a6be0056e85c59eb);
+            
+        
+
+        marker_48dda54e789b7707014cb9287acea192.bindPopup(popup_c12158c4a160aacc30aa8bc66a2abdc2)
+        ;
+
+        
+    
+    
+            marker_48dda54e789b7707014cb9287acea192.bindTooltip(
+                `<div>
+                     Ghana
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3104684a543e6878457f9b22544d49be = L.marker(
+                [18.9712, -72.2852],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_5ff2a7b085d857710eb67de8fd5194d1 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_d5ea5b819c958444a92faf1ede3099ce = $(`<div id="html_d5ea5b819c958444a92faf1ede3099ce" style="width: 100.0%; height: 100.0%;"><h3>Haiti</h3><p>2024: USAID/Haiti Water Security and Systems Strengthening (Eau) - DAI HO Technical Backstop</p><p>2024: USAID Fragile Waters - Water Data Specialist (STTA)</p></div>`)[0];
+                popup_5ff2a7b085d857710eb67de8fd5194d1.setContent(html_d5ea5b819c958444a92faf1ede3099ce);
+            
+        
+
+        marker_3104684a543e6878457f9b22544d49be.bindPopup(popup_5ff2a7b085d857710eb67de8fd5194d1)
+        ;
+
+        
+    
+    
+            marker_3104684a543e6878457f9b22544d49be.bindTooltip(
+                `<div>
+                     Haiti
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87144f0b3792f4eaa833f452e2b8ccb7 = L.marker(
+                [20.5937, 78.9629],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_0573ecef2da97cb7b89a47ee21530ad3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_2c7d3681075e90cf8507c2a6affdf1bb = $(`<div id="html_2c7d3681075e90cf8507c2a6affdf1bb" style="width: 100.0%; height: 100.0%;"><h3>India</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p><p>2022-2023: USAID Water, Sanitation, and Hygiene Finance 2.0 (WASH-FIN 2) - Project Analyst and MEL Lead</p></div>`)[0];
+                popup_0573ecef2da97cb7b89a47ee21530ad3.setContent(html_2c7d3681075e90cf8507c2a6affdf1bb);
+            
+        
+
+        marker_87144f0b3792f4eaa833f452e2b8ccb7.bindPopup(popup_0573ecef2da97cb7b89a47ee21530ad3)
+        ;
+
+        
+    
+    
+            marker_87144f0b3792f4eaa833f452e2b8ccb7.bindTooltip(
+                `<div>
+                     India
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_827f89c01e3919556a2908f79bba718b = L.marker(
+                [-0.7893, 113.9213],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_0a8f3e99e0244893999c85cb1c93e717 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_45f7ead661341a99467d1a18131305de = $(`<div id="html_45f7ead661341a99467d1a18131305de" style="width: 100.0%; height: 100.0%;"><h3>Indonesia</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p></div>`)[0];
+                popup_0a8f3e99e0244893999c85cb1c93e717.setContent(html_45f7ead661341a99467d1a18131305de);
+            
+        
+
+        marker_827f89c01e3919556a2908f79bba718b.bindPopup(popup_0a8f3e99e0244893999c85cb1c93e717)
+        ;
+
+        
+    
+    
+            marker_827f89c01e3919556a2908f79bba718b.bindTooltip(
+                `<div>
+                     Indonesia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b6309fad9a26833edfd8fd51d5d85ad1 = L.marker(
+                [-1.286389, 36.817223],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_3c7fcf0ba37edf569b6a27a4804855c2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_d352bf5ca4ab28aab172bc7531cd6c09 = $(`<div id="html_d352bf5ca4ab28aab172bc7531cd6c09" style="width: 100.0%; height: 100.0%;"><h3>Kenya</h3><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p><p>2022-2023: USAID Water, Sanitation, and Hygiene Finance 2.0 (WASH-FIN 2) - Project Analyst and MEL Lead</p><p>2024: USAID Africa Trade and Investment (ATI) - Environment Specialist (STTA)</p></div>`)[0];
+                popup_3c7fcf0ba37edf569b6a27a4804855c2.setContent(html_d352bf5ca4ab28aab172bc7531cd6c09);
+            
+        
+
+        marker_b6309fad9a26833edfd8fd51d5d85ad1.bindPopup(popup_3c7fcf0ba37edf569b6a27a4804855c2)
+        ;
+
+        
+    
+    
+            marker_b6309fad9a26833edfd8fd51d5d85ad1.bindTooltip(
+                `<div>
+                     Kenya
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ad2fa096ade1fd92d6d8b527d7d83095 = L.marker(
+                [7.1315, 171.1845],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_837d572c3746c309d75c5878584e0069 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_158440c9f2bd994234aa0bf4365339db = $(`<div id="html_158440c9f2bd994234aa0bf4365339db" style="width: 100.0%; height: 100.0%;"><h3>Marshall Islands</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p></div>`)[0];
+                popup_837d572c3746c309d75c5878584e0069.setContent(html_158440c9f2bd994234aa0bf4365339db);
+            
+        
+
+        marker_ad2fa096ade1fd92d6d8b527d7d83095.bindPopup(popup_837d572c3746c309d75c5878584e0069)
+        ;
+
+        
+    
+    
+            marker_ad2fa096ade1fd92d6d8b527d7d83095.bindTooltip(
+                `<div>
+                     Marshall Islands
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5c196328840b556af18247af9039e8b6 = L.marker(
+                [23.6345, -102.5528],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_f4694bc4da0c0694b13c007239a0c566 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6265eca5ee1d9f9ef0b06416f3333288 = $(`<div id="html_6265eca5ee1d9f9ef0b06416f3333288" style="width: 100.0%; height: 100.0%;"><h3>Mexico</h3><p>2019-2021: Research Project 'Strengthening Systems-Based Leak Prevention in CDMX through Blockchain'</p></div>`)[0];
+                popup_f4694bc4da0c0694b13c007239a0c566.setContent(html_6265eca5ee1d9f9ef0b06416f3333288);
+            
+        
+
+        marker_5c196328840b556af18247af9039e8b6.bindPopup(popup_f4694bc4da0c0694b13c007239a0c566)
+        ;
+
+        
+    
+    
+            marker_5c196328840b556af18247af9039e8b6.bindTooltip(
+                `<div>
+                     Mexico
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5cebf221e45d4e5fd4693bacb93789c8 = L.marker(
+                [46.8625, 103.8467],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_3e227474c3cd965e6b742a9af3862ef7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_bf60f672616a4f937c0a08ae0ec20e11 = $(`<div id="html_bf60f672616a4f937c0a08ae0ec20e11" style="width: 100.0%; height: 100.0%;"><h3>Mongolia</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p></div>`)[0];
+                popup_3e227474c3cd965e6b742a9af3862ef7.setContent(html_bf60f672616a4f937c0a08ae0ec20e11);
+            
+        
+
+        marker_5cebf221e45d4e5fd4693bacb93789c8.bindPopup(popup_3e227474c3cd965e6b742a9af3862ef7)
+        ;
+
+        
+    
+    
+            marker_5cebf221e45d4e5fd4693bacb93789c8.bindTooltip(
+                `<div>
+                     Mongolia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6b720069d96dba7291872bf6270308b = L.marker(
+                [-18.6657, 35.5296],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_621ce169195f0171dd3562eb6564fd9b = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_aabbe5a4919b5ae8a8111a3f3dcbaaf9 = $(`<div id="html_aabbe5a4919b5ae8a8111a3f3dcbaaf9" style="width: 100.0%; height: 100.0%;"><h3>Mozambique</h3><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p><p>2022: USAID/Mozambique Transform WASH - HO Startup Support</p></div>`)[0];
+                popup_621ce169195f0171dd3562eb6564fd9b.setContent(html_aabbe5a4919b5ae8a8111a3f3dcbaaf9);
+            
+        
+
+        marker_a6b720069d96dba7291872bf6270308b.bindPopup(popup_621ce169195f0171dd3562eb6564fd9b)
+        ;
+
+        
+    
+    
+            marker_a6b720069d96dba7291872bf6270308b.bindTooltip(
+                `<div>
+                     Mozambique
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_71f293f8dd783483e8355a55599a95ab = L.marker(
+                [21.9162, 95.956],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_ef406434d167e15181e1460312326adb = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_646d22cbe3acef79d7a9441cbd9a5432 = $(`<div id="html_646d22cbe3acef79d7a9441cbd9a5432" style="width: 100.0%; height: 100.0%;"><h3>Myanmar</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p></div>`)[0];
+                popup_ef406434d167e15181e1460312326adb.setContent(html_646d22cbe3acef79d7a9441cbd9a5432);
+            
+        
+
+        marker_71f293f8dd783483e8355a55599a95ab.bindPopup(popup_ef406434d167e15181e1460312326adb)
+        ;
+
+        
+    
+    
+            marker_71f293f8dd783483e8355a55599a95ab.bindTooltip(
+                `<div>
+                     Myanmar
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbfc820a42fde2572c7ad69ec4293fb6 = L.marker(
+                [28.3949, 84.124],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_9c7fb77c0adf8f3455008f79c68ebe58 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_9bc88d8a8cbd7b6fd2f98b05880e0710 = $(`<div id="html_9bc88d8a8cbd7b6fd2f98b05880e0710" style="width: 100.0%; height: 100.0%;"><h3>Nepal</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p></div>`)[0];
+                popup_9c7fb77c0adf8f3455008f79c68ebe58.setContent(html_9bc88d8a8cbd7b6fd2f98b05880e0710);
+            
+        
+
+        marker_fbfc820a42fde2572c7ad69ec4293fb6.bindPopup(popup_9c7fb77c0adf8f3455008f79c68ebe58)
+        ;
+
+        
+    
+    
+            marker_fbfc820a42fde2572c7ad69ec4293fb6.bindTooltip(
+                `<div>
+                     Nepal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ed55b6b29e6d9a2bf56d50cf256f9f3e = L.marker(
+                [9.081999, 8.675277],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_e74701eb9bd1802f798ce684018f45d2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_c3534dfdca832833757350227bddc22f = $(`<div id="html_c3534dfdca832833757350227bddc22f" style="width: 100.0%; height: 100.0%;"><h3>Nigeria</h3><p>2023-2024: Research Project 'A Deep Learning Approach to Water Point Detection and Mapping Using Street-Level Imagery'</p></div>`)[0];
+                popup_e74701eb9bd1802f798ce684018f45d2.setContent(html_c3534dfdca832833757350227bddc22f);
+            
+        
+
+        marker_ed55b6b29e6d9a2bf56d50cf256f9f3e.bindPopup(popup_e74701eb9bd1802f798ce684018f45d2)
+        ;
+
+        
+    
+    
+            marker_ed55b6b29e6d9a2bf56d50cf256f9f3e.bindTooltip(
+                `<div>
+                     Nigeria
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d594403f0c8c2b96bb9f94256d4e5ced = L.marker(
+                [-6.314993, 143.95555],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_309b15b9f93f967a634c3b915bde2d83 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_ab27b78104af667ac9f6fd85e039dee4 = $(`<div id="html_ab27b78104af667ac9f6fd85e039dee4" style="width: 100.0%; height: 100.0%;"><h3>Papua New Guinea</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p></div>`)[0];
+                popup_309b15b9f93f967a634c3b915bde2d83.setContent(html_ab27b78104af667ac9f6fd85e039dee4);
+            
+        
+
+        marker_d594403f0c8c2b96bb9f94256d4e5ced.bindPopup(popup_309b15b9f93f967a634c3b915bde2d83)
+        ;
+
+        
+    
+    
+            marker_d594403f0c8c2b96bb9f94256d4e5ced.bindTooltip(
+                `<div>
+                     Papua New Guinea
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_80068e101277f410349b20721f48df6d = L.marker(
+                [12.8797, 121.774],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_73e9c70381ef30f3a1969eb8b302f132 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_ebd80c6cc1a7a240315dd23ad64550c6 = $(`<div id="html_ebd80c6cc1a7a240315dd23ad64550c6" style="width: 100.0%; height: 100.0%;"><h3>Philippines</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p><p>2023-2024: USAID/Philippines Safe Water - DAI HO Technical Backstop, WSSH Specialist (STTA)</p></div>`)[0];
+                popup_73e9c70381ef30f3a1969eb8b302f132.setContent(html_ebd80c6cc1a7a240315dd23ad64550c6);
+            
+        
+
+        marker_80068e101277f410349b20721f48df6d.bindPopup(popup_73e9c70381ef30f3a1969eb8b302f132)
+        ;
+
+        
+    
+    
+            marker_80068e101277f410349b20721f48df6d.bindTooltip(
+                `<div>
+                     Philippines
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c72bc67ead23e2d1f44991fbb2296d25 = L.marker(
+                [-1.9403, 29.8739],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_15d4701e4687886f1041c4bf8ea52a23 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_8038a008a8bb341be890f2a9249f74e8 = $(`<div id="html_8038a008a8bb341be890f2a9249f74e8" style="width: 100.0%; height: 100.0%;"><h3>Rwanda</h3><p>2022-2023: USAID Water, Sanitation, and Hygiene Finance 2.0 (WASH-FIN 2) - Project Analyst and MEL Lead</p></div>`)[0];
+                popup_15d4701e4687886f1041c4bf8ea52a23.setContent(html_8038a008a8bb341be890f2a9249f74e8);
+            
+        
+
+        marker_c72bc67ead23e2d1f44991fbb2296d25.bindPopup(popup_15d4701e4687886f1041c4bf8ea52a23)
+        ;
+
+        
+    
+    
+            marker_c72bc67ead23e2d1f44991fbb2296d25.bindTooltip(
+                `<div>
+                     Rwanda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_654792e782157995f33fb94360adc2c5 = L.marker(
+                [14.4974, -14.4524],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_ca33c3b67cdb7409edbbbda5c25774a8 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f8d7551418fb2c7757ea8cd6d9591535 = $(`<div id="html_f8d7551418fb2c7757ea8cd6d9591535" style="width: 100.0%; height: 100.0%;"><h3>Senegal</h3><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p></div>`)[0];
+                popup_ca33c3b67cdb7409edbbbda5c25774a8.setContent(html_f8d7551418fb2c7757ea8cd6d9591535);
+            
+        
+
+        marker_654792e782157995f33fb94360adc2c5.bindPopup(popup_ca33c3b67cdb7409edbbbda5c25774a8)
+        ;
+
+        
+    
+    
+            marker_654792e782157995f33fb94360adc2c5.bindTooltip(
+                `<div>
+                     Senegal
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4d3299fe6960106b6e135698b9a176dd = L.marker(
+                [-30.5595, 22.9375],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_7340d9ecd0b913eafa839bf5864f9246 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_e11457478059eaaddc0e2766e086790e = $(`<div id="html_e11457478059eaaddc0e2766e086790e" style="width: 100.0%; height: 100.0%;"><h3>South Africa</h3><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p></div>`)[0];
+                popup_7340d9ecd0b913eafa839bf5864f9246.setContent(html_e11457478059eaaddc0e2766e086790e);
+            
+        
+
+        marker_4d3299fe6960106b6e135698b9a176dd.bindPopup(popup_7340d9ecd0b913eafa839bf5864f9246)
+        ;
+
+        
+    
+    
+            marker_4d3299fe6960106b6e135698b9a176dd.bindTooltip(
+                `<div>
+                     South Africa
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e3af00849fa92c5b4235672d49e186b = L.marker(
+                [-6.369, 34.8888],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_45e14b20ecb3bbdca8457fa0a091f0bd = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_fc52bb6151e8db7f6cf9f4588de04d00 = $(`<div id="html_fc52bb6151e8db7f6cf9f4588de04d00" style="width: 100.0%; height: 100.0%;"><h3>Tanzania</h3><p>2017: Critical Language Scholarship in Swahili</p><p>2019-2020: Research Project 'Digital Credit: Closing Rural Water Financing Gaps in Tanzania'</p></div>`)[0];
+                popup_45e14b20ecb3bbdca8457fa0a091f0bd.setContent(html_fc52bb6151e8db7f6cf9f4588de04d00);
+            
+        
+
+        marker_8e3af00849fa92c5b4235672d49e186b.bindPopup(popup_45e14b20ecb3bbdca8457fa0a091f0bd)
+        ;
+
+        
+    
+    
+            marker_8e3af00849fa92c5b4235672d49e186b.bindTooltip(
+                `<div>
+                     Tanzania
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82f86a2a2b2389c43036903c62b50701 = L.marker(
+                [15.87, 100.9925],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_0a21be46b8c18d12f7ae42ebf69ffc13 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_4b59685c547c09f87e93835827711de0 = $(`<div id="html_4b59685c547c09f87e93835827711de0" style="width: 100.0%; height: 100.0%;"><h3>Thailand</h3><p>2019: Exchange student at Thammasat Business School</p></div>`)[0];
+                popup_0a21be46b8c18d12f7ae42ebf69ffc13.setContent(html_4b59685c547c09f87e93835827711de0);
+            
+        
+
+        marker_82f86a2a2b2389c43036903c62b50701.bindPopup(popup_0a21be46b8c18d12f7ae42ebf69ffc13)
+        ;
+
+        
+    
+    
+            marker_82f86a2a2b2389c43036903c62b50701.bindTooltip(
+                `<div>
+                     Thailand
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8f1a5e029eb1f3eac45004775cadbd98 = L.marker(
+                [33.8869, 9.5375],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_4d8bccee5e25ea9fb62c1d784f0d64b4 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f2c002055289e5d2631435c07d29bf5e = $(`<div id="html_f2c002055289e5d2631435c07d29bf5e" style="width: 100.0%; height: 100.0%;"><h3>Tunisia</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p></div>`)[0];
+                popup_4d8bccee5e25ea9fb62c1d784f0d64b4.setContent(html_f2c002055289e5d2631435c07d29bf5e);
+            
+        
+
+        marker_8f1a5e029eb1f3eac45004775cadbd98.bindPopup(popup_4d8bccee5e25ea9fb62c1d784f0d64b4)
+        ;
+
+        
+    
+    
+            marker_8f1a5e029eb1f3eac45004775cadbd98.bindTooltip(
+                `<div>
+                     Tunisia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59f8d705d55bf829b312e82038ae086a = L.marker(
+                [1.3733, 32.2903],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_f86047f8d656b5c07f66bca11d583970 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_ce90a5fc1bb44ed7c3e192bf4793f54a = $(`<div id="html_ce90a5fc1bb44ed7c3e192bf4793f54a" style="width: 100.0%; height: 100.0%;"><h3>Uganda</h3><p>2019-2020: USAID/Uganda Sanitation for Health Activity - Deputy Project Manager</p></div>`)[0];
+                popup_f86047f8d656b5c07f66bca11d583970.setContent(html_ce90a5fc1bb44ed7c3e192bf4793f54a);
+            
+        
+
+        marker_59f8d705d55bf829b312e82038ae086a.bindPopup(popup_f86047f8d656b5c07f66bca11d583970)
+        ;
+
+        
+    
+    
+            marker_59f8d705d55bf829b312e82038ae086a.bindTooltip(
+                `<div>
+                     Uganda
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c939d62b3a4212ca26ce2ddee312d098 = L.marker(
+                [-15.3767, 166.9592],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_e9bc244d64f8c7b0f2daf42ded7aec6f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_b786e55fdda3d8a096bcbb6df6c4ecc1 = $(`<div id="html_b786e55fdda3d8a096bcbb6df6c4ecc1" style="width: 100.0%; height: 100.0%;"><h3>Vanuatu</h3><p>2019-2020: USAID Development Credit Authority/U.S. International Development Finance Corporation - Intern</p></div>`)[0];
+                popup_e9bc244d64f8c7b0f2daf42ded7aec6f.setContent(html_b786e55fdda3d8a096bcbb6df6c4ecc1);
+            
+        
+
+        marker_c939d62b3a4212ca26ce2ddee312d098.bindPopup(popup_e9bc244d64f8c7b0f2daf42ded7aec6f)
+        ;
+
+        
+    
+    
+            marker_c939d62b3a4212ca26ce2ddee312d098.bindTooltip(
+                `<div>
+                     Vanuatu
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_de073080db23a8b6e9866d86450f720a = L.marker(
+                [-13.1339, 27.8493],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_6944e41eac904080de94742c2fb3a9b7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_b69816db617cfe0c4af202abf06bbb4d = $(`<div id="html_b69816db617cfe0c4af202abf06bbb4d" style="width: 100.0%; height: 100.0%;"><h3>Zambia</h3><p>2020-2022: USAID Water, Sanitation, and Hygiene Finance (WASH-FIN) - Assistant Project Manager</p></div>`)[0];
+                popup_6944e41eac904080de94742c2fb3a9b7.setContent(html_b69816db617cfe0c4af202abf06bbb4d);
+            
+        
+
+        marker_de073080db23a8b6e9866d86450f720a.bindPopup(popup_6944e41eac904080de94742c2fb3a9b7)
+        ;
+
+        
+    
+    
+            marker_de073080db23a8b6e9866d86450f720a.bindTooltip(
+                `<div>
+                     Zambia
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca03b50842b26987d879e94aaa179935 = L.marker(
+                [55.3781, -3.436],
+                {}
+            ).addTo(map_aa3a0ca3f979ab09772996e1fb375668);
+        
+    
+        var popup_9d851bab171b7e8b7052efb780b13d2c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_4708c0609bb9d215f393937c445658b0 = $(`<div id="html_4708c0609bb9d215f393937c445658b0" style="width: 100.0%; height: 100.0%;"><h3>United Kingdom</h3><p>2024: UK Global Centre on Biodiversity for Climate - STTA</p></div>`)[0];
+                popup_9d851bab171b7e8b7052efb780b13d2c.setContent(html_4708c0609bb9d215f393937c445658b0);
+            
+        
+
+        marker_ca03b50842b26987d879e94aaa179935.bindPopup(popup_9d851bab171b7e8b7052efb780b13d2c)
+        ;
+
+        
+    
+    
+            marker_ca03b50842b26987d879e94aaa179935.bindTooltip(
+                `<div>
+                     United Kingdom
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
