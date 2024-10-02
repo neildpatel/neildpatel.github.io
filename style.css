@@ -164,3 +164,42 @@ a:hover {
     cursor: pointer;
     font-size: 80%;
 }
+
+.gallery {
+    position: relative;
+    width: 600px; /* Set your desired width */
+    overflow: hidden;
+}
+
+.gallery-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.gallery-images img {
+    width: 85%;
+    display: none; /* Hide all images by default */
+}
+
+.gallery-images img.active {
+    display: block;
+    margin: 0 auto; /* Show the active image */
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}

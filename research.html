@@ -8,6 +8,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <title>Neil Patel</title>
     <style>
+        .parent {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .box {
+            border-radius: 8px;
+            padding: 16px;
+            max-width: 40%;
+            text-align: center;
+            line-height: 90%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .box img {
+            max-width: 90%;
+            border-radius: 4px;
+        }
+        .box h2 {
+            font-size: 0.7em;
+            margin: 10px 0;
+        }
+        .box p {
+            color: #555;
+            font-size: 0.75em;
+        }
+        .box a {
+            text-decoration: none;
+            color: #ccc;
+            font-size: 0.9em;
+        }
+        .box a:hover {
+            text-decoration: underline;
+        }
         .section-1 img {
             max-width: 40%;
             height: auto;
@@ -47,21 +80,51 @@
             <a href="https://github.com/neildpatel"><i class="fab fa-github"></i></a>
         </div>
         <div class="section-2">  
-            <h2>Projects</h2>
-                <ul>
-                    <li> Aquifer Characterization and Vulnerability Mapping for the Plaine du Nord-Massacre Transboundary Alluvial Aquifer in Haiti [USAID Fragile Waters] – <i>October 2024</i> </li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Description:</i> I was engaged by the USAID Fragile Waters activity to support USAID/Haiti in developing evidence-based toolkits to facilitate adaptive and concerted management of shared national and transboundary water resources. I collaborated with Northwater Consulting, USAID Eau, and USAID Fragile Waters leadership to develop a StoryMap that visualizes the connectivity of the watershed, rivers, and the aquifer, including outlining primary basins, recharge, and aquifer thickness. We additionally present high-resolution projections of population growth and water demand at the third administrative level to model future dependence on the aquifer by 2050 and inform tailored and localized management strategies. Finally, we outline emerging threats to the aquifer, including saltwater intrusion, climate change, contamination, and politicization of the Massacre River. The StoryMap will be presented at the 2024 UNC Water & Health Conference in coordination with key Haitian government stakeholders, including DINEPA, INARHy, and State University of Haiti's Center for Water Resilience. </p>
-                    <li> A Deep Learning Approach to Water Point Detection and Mapping Using Street-Level Imagery in Lagos, Nigeria [MIT Senseable City Lab] – <i>July 2024</i> <a href="https://doi.org/10.2166/wpt.2024.197" class="button">Publication</a> <a href="files/Patel_UNC_Poster.pdf" class="button">Poster</a> <a href="files/UNC Tech Showcase.pdf" class="button">Slides</a> <a href="https://github.com/neildpatel/waterpointdetections" class="button">GitHub Repo</a> <a href="https://universe.roboflow.com/neil-patel/lagos-water-point-detections/dataset/3" class="button">Roboflow</a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Description:</i> Households in developing countries often rely on alternative shared water sources that exist outside of the datasets of public service providers. This poses a significant challenge to accurately measuring the number of households outside the public service system that use a safe and accessible water source. This paper proposes a novel deep learning approach that utilizes a convolutional neural network to detect water points in street-level imagery from Google Street View. Using a case study of the Agege local government area in Lagos, Nigeria, the model detected 36 previously unregistered water points across a variety of urban settings and obstruction levels with 94.7% precision. The paper was developed through the support of Prof. Carlo Ratti and the MIT Senseable City Lab. The research was presented at the 2023 UNC Water & Health Conference as a poster and in the Technology Showcase, and the full manuscript was published in the <i>Journal of Water Practice & Technology</i>. I supported the Philippines' national water agency (DENR-WRMO) to apply this methodology to identify barangays without Level III systems. </p>
-                    <li> Data Collection and Monitoring for Vermifilter Toilets in Agua Bonita, Colombia [MIT D-Lab] – <i>August 2023</i> <a href="https://d-lab.mit.edu/academics/student-projects-presentations/data-collection-and-monitoring-vermifilter-toilets" class="button"> D-Lab Project Page </a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Description:</i> Ecoconcientizate is currently piloting a cutting-edge biological sewage treatment system specifically designed for use in rural Colombia. The vermifiltration system utilizes California red worms to compost fecal matter, and then drains liquids into a secondary layer of sand and gravel filters before transporting it to an artificial wetland for further treatment through a phytoremediation process. Our team conducted water quality testing on three vermifilter systems in Agua Bonita, Colombia. We also led bilingual community workshops in Spanish and English on at-home water quality monitoring for community members interested in installing their own vermifilter system. </p>
-                    <li> Impact Evaluation of Meter Replacements on Water Service Provider Revenue Collection in Kenya [USAID WASH-FIN 2] – <i>August 2023</i> <a href="https://github.com/neildpatel/kenyameteringimpacteval" class="button">Code</a> <a href="files/WF2_DEDP_Capstone_Patel.pdf" class="button">Slides</a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Description:</i> Capstone Thesis for MASc in Data, Economics, and Development Policy at MIT. The COVID-19 pandemic had a substantial impact on financial sustainability of water utilities in Kenya. USAID's Water, Sanitation, and Hygiene Finance (WASH-FIN) supported four Kenyan county water utilities in replacing 5,100 meters to improve the accuracy of billing systems. Using a differences-in-differences quasi-experimental design, I produce an estimate of the financial impact of the metering intervention on revenue collection while differencing out temporal variation and baseline imbalances in water consumption. The final report and verbal presentation were evaluated by faculty director and Nobel laureate Esther Duflo. </p>
-                    <li> Women and Water Conservation: Intra-Household Learning in Jordan’s Agriculture Sector [MIT Economics] – <i>May 2023</i> <a href="files/jordan.pdf" class="button"> Research Proposal </a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Description:</i> This project presents an experimental design for a behavioral economics RCT that estimates the effect of gender on information spillovers for water conservation knowledge in agricultural communities in Jordan. The proposal was developed as part of a PhD-level workshop under the supervision of Nobel laureate Prof. Abhijit Banerjee and Prof. Frank Schilbach. </p>
-                    <li> Strengthening Systems-Based Leak Prevention in CDMX Using Blockchain [UT Austin] – <i>October 2021</i> <a href="https://watersciencepolicy.com/article/strengthening-systemsbased-leak-prevention-in-ciudad-de-mxico-through-blockchain--1091c7aab398?language=English" class="button">Blog</a> <a href="files/IFAT Eurasia – Blockchain CDMX.pdf" class="button">Slides</a> <a href="https://youthforwater.org/app/uploads/2021/05/WYPW_Innovation-for-Water_GA-2021.pdf" class="button">Brief</a> <a href="https://youtu.be/tNmJsG2Y5Do?si=6D2NuRCsWgjlCKdT&t=2121" class="button">Presentation</a></li>
-                        <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Description:</i> Ciudad de México (CDMX) loses an estimated 40 percent of water to thousands of leaks emerging throughout its over 12,000 kilometres of piped infrastructure, half of which was built six decades ago. Navigating the interrelated challenges of leak detection, maintenance, and prevention requires a systems-based approach that harmonizes the efforts of the numerous stakeholders involved in managing the metropolitan area’s water infrastructure. This research explores three potential applications of the enhanced data integrity offered through blockchain to improving systems-based leak prevention in CDMX: (1) streamlining maintenance through smart contracts, (2) reducing diligence burdens for external financing, and (3) strengthening accountability mechanisms for equitable service provision. </p>
-                </ul>
+            <h2 align="center">Projects</h2>
+                <br/><br/>
+                    <div class = "parent">
+                        <div class="box">
+                            <img src="pics/haiti.png"></br>
+                            <a href="haiti.html">Aquifer Characterization and Vulnerability Mapping for the Plaine du Nord-Massacre System in Haiti
+                            </br><h2>USAID Fragile Waters
+                            </br><i>October 2024</i></a></h2>
+                        </div>
+                        <div class="box">
+                            <img src="pics/nigeria.png"></br>
+                            <a href="nigeria.html">A Deep Learning Approach to Water Point Detection and Mapping Using Street-Level Imagery in Lagos, Nigeria    
+                            </br><h2>MIT Senseable City Lab
+                            </br><i>July 2024</i></a></h2>
+                        </div>
+                    </div>
+                    <div class = "parent">
+                        <div class="box">
+                            <img src="pics/colombia.png"></br>
+                            <a href="colombia.html">Data Collection and Monitoring for Vermifilter Toilets in Agua Bonita, Colombia
+                            </br><h2>MIT D-Lab
+                            </br><i>August 2023</i></a></h2>
+                        </div>
+                        <div class="box">
+                            <img src="pics/kenya.jpeg"></br>
+                            <a href="kenya.html">Impact Evaluation of Meter Replacements on Water Service Provider Revenue Collection in Kenya    
+                            </br><h2>USAID WASH-FIN 2
+                            </br><i>August 2023</i></a></h2>
+                        </div>
+                    </div>
+                    <div class = "parent">
+                        <div class="box">
+                            <img src="pics/jordan.jpg"></br>
+                            <a href="jordan.html">Women and Water Conservation: Intra-Household Learning in Jordan’s Agriculture Sector
+                            </br><h2>MIT Economics
+                            </br><i>May 2023</i></a></h2>
+                        </div>
+                        <div class="box">
+                            <img src="pics/cdmx.png"></br>
+                            <a href="cdmx.html">Strengthening Systems-Based Leak Prevention in Ciudad de Mexico Using Blockchain    
+                            </br><h2>UT Austin
+                            </br><i>November 2021</i></a></h2>
+                        </div>
+                    </div>
+                    </div>
         </div>  
         </div>
     </div>

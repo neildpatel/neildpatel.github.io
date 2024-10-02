@@ -48,11 +48,38 @@
         </div>
         <div class="section-2">  
             </br><h1>Strengthening Systems-Based Leak Prevention in CDMX Using Blockchain</h1>
+            <div class="gallery">
+                <div class="gallery-images">
+                    <img src="pics/cdmx.png" alt="Image 1">
+                </div>
+                <button class="arrow left" onclick="changeImage(-1)">&#10094;</button>
+                <button class="arrow right" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        
+            <script>
+                let currentIndex = 0;
+        
+                function changeImage(direction) {
+                    const images = document.querySelectorAll('.gallery-images img');
+                    images[currentIndex].classList.remove('active');
+        
+                    currentIndex += direction;
+        
+                    // Wrap around if at the ends
+                    if (currentIndex < 0) {
+                        currentIndex = images.length - 1;
+                    } else if (currentIndex >= images.length) {
+                        currentIndex = 0;
+                    }
+        
+                    images[currentIndex].classList.add('active');
+                }
+            </script></br>
             <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Affiliation:</i> University of Texas at Austin</p>
             <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Completion:</i> November 2021</p>
-            </br<p>Ciudad de México (CDMX) loses an estimated 40 percent of water to thousands of leaks emerging throughout its over 12,000 kilometres of piped infrastructure, half of which was built six decades ago. Navigating the interrelated challenges of leak detection, maintenance, and prevention requires a systems-based approach that harmonizes the efforts of the numerous stakeholders involved in managing the metropolitan area’s water infrastructure.</p>
-            <p>This research explores three potential applications of the enhanced data integrity offered through blockchain to improving systems-based leak prevention in CDMX: (1) streamlining maintenance through smart contracts, (2) reducing diligence burdens for external financing, and (3) strengthening accountability mechanisms for equitable service provision. It was conducted with Prof. Jane Cohen at the University of Texas at Austin, and received support from the Inter-American Development Bank</p>
-            <h2>Outputs</h2>
+            </br<p>Ciudad de México (CDMX) loses an estimated 40 percent of water to thousands of leaks emerging throughout its over 12,000 kilometres of piped infrastructure, half of which was built six decades ago. Navigating the interrelated challenges of leak detection, maintenance, and prevention requires a systems-based approach that harmonizes the efforts of the numerous stakeholders involved in managing the metropolitan area’s water infrastructure.
+            </br></br>This research explores three potential applications of the enhanced data integrity offered through blockchain to improving systems-based leak prevention in CDMX: (1) streamlining maintenance through smart contracts, (2) reducing diligence burdens for external financing, and (3) strengthening accountability mechanisms for equitable service provision. It was conducted with Prof. Jane Cohen at the University of Texas at Austin, and received support from the Inter-American Development Bank</p>
+            <h2>More</h2>
             <ul>
                 <li>Blog Post in Water Science Policy <a href="https://watersciencepolicy.com/article/strengthening-systemsbased-leak-prevention-in-ciudad-de-mxico-through-blockchain--1091c7aab398?language=English" class="button">Link</a></li>
                 <li>Presentation at IFAT Eurasia 2021 <a href="files/IFAT Eurasia – Blockchain CDMX.pdf" class="button">Link</a></li> 
