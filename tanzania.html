@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Neil Patel</title>
+    <style>
+        .section-1 img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto;
+        }
+        .section-1 a {
+            display: inline; /* Display the anchor element inline */
+            margin-right: 0px; /* Add some spacing between the links */
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ced9ff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="research.html">Projects</a>
+        <a href="presentations.html">Presentations</a>
+        <a href="map.html">Work History</a>
+    </nav>
+    <div class="grid-2">
+        <div class="section-1">
+            <img src="pics/Headshot.jpg" alt="Neil Patel's headshot">
+            <h1>Neil Patel</h1>
+            <p>WSSH Specialist @ DAI</p>
+            <a href="https://twitter.com/neildevpatel"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/neil-patel-035879119/"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/neildpatel"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="section-2">  
+            </br><h1>Digital Credit: Closing the Water Financing Gap in Rural Tanzania</h1>
+            <div class="gallery">
+                <div class="gallery-images">
+                    <img src="pics/tanzania.JPG" alt="Image 1" class="active">
+                </div>
+                <button class="arrow left" onclick="changeImage(-1)">&#10094;</button>
+                <button class="arrow right" onclick="changeImage(1)">&#10095;</button>
+            </div>
+        
+            <script>
+                let currentIndex = 0;
+        
+                function changeImage(direction) {
+                    const images = document.querySelectorAll('.gallery-images img');
+                    images[currentIndex].classList.remove('active');
+        
+                    currentIndex += direction;
+        
+                    // Wrap around if at the ends
+                    if (currentIndex < 0) {
+                        currentIndex = images.length - 1;
+                    } else if (currentIndex >= images.length) {
+                        currentIndex = 0;
+                    }
+        
+                    images[currentIndex].classList.add('active');
+                }
+            </script></br>
+            <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Affiliation:</i> UT Austin </p>
+            <p style="font-size:90%; color: rgba(255, 255, 255, 0.691)"><i>Completion:</i> June 2020 </p>
+            </br<p>The United Republic of Tanzania explicitly recognizes the human right to water and
+                sanitation in its constitution. However, full implementation of this right has been complicated by
+                Tanzania’s ongoing decentralization process for water governance, which has created a
+                significant public financing gap for cash-strapped rural water schemes. Under the framework of
+                the progressive realization of the human right to water, this thesis examines the potential for
+                digital credit financing to bridge the public financing gap for rural water schemes in Tanzania.
+                The thesis utilizes (1) country-wide data on digital financial inclusion and rural water access and
+                (2) two case studies of digital credit financing in the rural water sector to explore the viability of
+                a digital credit financing model.</p>
+            <h2>More</h2>
+            <ul>
+                <li>Thesis <a href="https://repositories.lib.utexas.edu/items/cec303b8-bb1f-4b58-be90-d2a7c198a85e" class="button">Link</a></li>
+                <li>Received Plan II Model Thesis & Special Honors Distinctions</li>
+            </ul>
+        </div>  
+        </div>
+    </div>
+</body>
+</html>
